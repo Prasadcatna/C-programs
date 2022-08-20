@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+	float p, *pc;
+	p =11.34;
+	pc=&p;
+	printf("Address of p: %p\n",pc);
+	pritnf("Value of p: %f\n",*pc);
+	pc=pc+2;
+	printf("Increased address of p: %p\n",pc);
+	*pc=2.3;
+	printf("Address of p after: %p\n",&p);
+	printf("Value of p: %f\n",*pc);
+
+}
